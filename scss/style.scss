@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&family=Playball&family=Poppins:ital,wght@0,500;1,300&display=swap');
+@import 'animate.css';
+*{
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+@import "navbar";
+@import "index";
+@import "conoceme";
+@import "form_contacto";
+@import "section_coach";
+@import "section_MK";
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: gainsboro;
+    margin-top: 20px;
+}

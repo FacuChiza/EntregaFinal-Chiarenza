@@ -1,0 +1,79 @@
+.cont-txt-rrss{
+    display: flex;
+    justify-content: center;
+
+    .txt-rrss{
+        background-color: #f6c8f1;
+        font-family: 'Cabin', sans-serif;
+        font-size: 4vh;
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 100px;
+        margin-right: 8vh;
+        margin-left: 8vh;
+    }
+}
+.cont-items-rrss{
+    display: flex;
+    justify-content: center;
+    margin-top:10vh;
+
+    i{
+        font-size: 25vh;
+        color: black;
+        margin: 0px 40px;
+        border-radius: 30%;
+        padding: 40px;
+        box-shadow: 0px 5px 10px black;
+        transition: .3s ease;
+    }
+}
+
+.fa-youtube:hover{
+    background: rgba(255, 0, 0, 0.518);
+}
+
+.fa-instagram:hover{
+    background: radial-gradient(circle at 33% 100%, #f6d284 4%,#e7766b 30%,#d5518f 62%,#9b57ae 85%,#636dcd);
+}
+
+.fa-whatsapp:hover{
+    background: #78cb96;
+}
+
+@media (max-width: 1023px){
+    .cont-txt-rrss{
+        margin-top: 90px;
+
+        .txt-rrss{
+            font-size: 3vh;
+         }
+    }
+
+    .cont-nav-bar{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .cont-items-rrss{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 10px;
+
+        .link-rrss{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+
+            i{
+
+                font-size: 80px;
+                padding: 20px;
+            }
+        }
+    }
+
+}
