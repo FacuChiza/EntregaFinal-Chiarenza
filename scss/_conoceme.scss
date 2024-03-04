@@ -16,10 +16,10 @@
 .cont-items-rrss{
     display: flex;
     justify-content: center;
-    margin-top:10vh;
+    margin-top: 10vh;
 
     i{
-        font-size: 25vh;
+        font-size: 23vh;
         color: black;
         margin: 0px 40px;
         border-radius: 30%;
@@ -41,9 +41,11 @@
     background: #78cb96;
 }
 
-@media (max-width: 1023px){
+@media (max-width: 767px){
     .cont-txt-rrss{
-        margin-top: 90px;
+        margin-top: 10px;
+        margin: 0 10%;
+        
 
         .txt-rrss{
             font-size: 3vh;
@@ -69,7 +71,6 @@
             text-decoration: none;
 
             i{
-
                 font-size: 80px;
                 padding: 20px;
             }

@@ -1,46 +1,77 @@
 .cont-nav-bar{
-    height: 15vh;
+    position: fixed;
+    top: 0;
+    min-height: 65px;
+    height: 12vh;
+    max-height: 80px;
     background-color: #d08fc8;
     width: 100%;
+    z-index: 1;
+    
+  .nav-menu-item {
+    min-height: 20px;
 
-    .navbar-toggler {
-        font-size: 24px;
-    }
 
-    .nav-menu-item {
-        font-family: 'Poppins', sans-serif;
-        font-size: 3vh;
-        margin: 0 15px;
-        margin-bottom: 20px;
+    .nav-menu-link {
+      border-radius: 15px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 100%;
+      margin: 0px 13px;
+      padding: 5px;
+      display: flex;
 
-        .nav-menu-link {
-            border-radius: 15px;
-            padding: 10px 20px;
-
-            &:hover{
-                background-color: rgb(208, 123, 195);
-                box-shadow: 0 0 0 4px rgb(208, 123, 195);
-                transition: 0,5s;
-            }
-          }
-      }
-
+        &:hover{
+          background-color: rgb(208, 123, 195);
+          box-shadow: 0 0 0 4px rgb(208, 123, 195);
+          transition: 0,5s;
+        }
+      }  
+  }
 }
 
+.cont-nav-bar-MK{
+  background-color:#f5b7c7;
+
+  .nav-menu-item{
+
+    .nav-menu-link-MK{
+      
+      &:hover{
+          background-color: rgb(233, 161, 193);
+          box-shadow: 0 0 0 4px rgb(233, 161, 193);
+          transition: 0,5s;
+      }
+    }
+  }
+}
+
+.cont-nav-bar-coach{
+  background-color: rgb(183, 242, 205);
+
+  .nav-menu-item{
+
+    .nav-menu-link-coach{
+
+      &:hover{
+          background-color:rgb(139, 168, 160);
+          box-shadow:0 0 0 4px rgb(139, 168, 160);
+          transition: 0,5s;
+      } 
+    }
+  }
+}
+
+
 .logo {
-    width: 10vw;
+    width: 12vh;
     height: auto;
-    max-width: 200px;
+    min-width: 70px;
+    max-width: 100%;
+    max-height: 100%;
     margin-left: 20px;
   }
 
 @media (max-width: 768px) {
-    .logo {
-      min-width: 13vh;
-    }
-}
-
-@media (max-width: 992px) {
 
     .cont-nav-bar{
       min-height: 70px;
@@ -53,29 +84,31 @@
 
       .list-nav-bar {
         margin-left: 0;
-        text-align: center;
-        margin-top: 7vh;
+        margin-top: 6vh;
         background-color: #f6e9f7;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
 
         .nav-menu-item {
-            font-size: 3vh;
-
-            .nav-menu-link:hover {
-                box-shadow: inset 0 0 0 2px rgb(208, 123, 195);
-              }
+            font-size: 14px;
+            margin: 5px 0;
           }
+      }
+
+      .list-nav-bar-coach{
+        background-color: rgb(214, 241, 232);    
       }
     }
 
-    .cont-nav-bar .cont-nav-bar-coach{
-        min-height: 80px;
-        max-height: 80px;
-    }
-
     .logo{
-        max-width: 70px;
+        width: 70px;
+        margin-left: 10px;
     }
 }
 
-
+@media (min-width: 1025px){
+  .navbar{
+    margin: 0 50vh;  
+  }
+}

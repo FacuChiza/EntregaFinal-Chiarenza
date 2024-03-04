@@ -1,34 +1,30 @@
-.cont-nav-bar-MK{
-    background-color: rgb(244, 172, 183);
-
-    &:hover {
-        background-color:rgb(244, 147, 147) ;
-        box-shadow: 0 0 0 4px rgb(244, 147, 147)
-    }
-}
-
 .cont-resumen{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 10px;
+    animation: 2;
+    margin: 0 40px;
+    margin-top: 90px;
 
     .resumen{
-        margin-top: 100px;
-        background-color: rgb(243, 219, 219);
+        background-color: rgb(247, 230, 230);
         padding: 20px 20px;
         font-family: 'Cabin', sans-serif;
-        font-size: 20px;
+        font-size: 22px;
         box-shadow: 10px 10px 20px rgb(68, 68, 68);
     }
 }
 
 .cont-txt-img{
     display: flex;
+    margin: 0 40px;
 
     .ft-parada{
-        margin-right: 50px;
         margin-left: 10px;
+        margin-right: 40px;
+        padding: 20px;
+        padding-bottom: 0;
         height: 90vh;
         background-color: #f6c8f1;
         box-shadow: 10px 10px 20px rgb(68, 68, 68);
@@ -40,7 +36,8 @@
         text-align: center;
         font-family: 'Cabin', sans-serif;
         font-size: 28px;
-        padding: 15px;
+        padding: 10px;
+        margin-right: 10px;
         box-shadow: 10px 10px 20px rgb(68, 68, 68);
     }
 }
@@ -51,8 +48,13 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
-    padding-top: 20px;
+    margin-top: 35px;
 }
+
+.no-sabes{
+    animation: 10;
+}
+
 
 .div-iniciarse-MK{
     display: flex;
@@ -62,34 +64,23 @@
     font-size: 20px;
     color: rgb(111, 111, 107);
     padding: 20px;
+    margin: 0 40px;
 }
 
-.video-MK{
+.cont-video-MK{
     display: flex;
     justify-content: center;
+
+    .video-MK{
+        width: 560px;
+        height: 315px;
+    }
 }
 
-@media (max-width: 992px){
-    .navbar-brand {
-        margin-top: 10px;
-        margin-left: 10px;
-      }
 
-      .list-nav-bar {
-        margin-left: 0;
-        text-align: center;
-        margin-top: 7vh;
-        background-color: #f6e9f7;
-        border-radius: 10px;
-
-        .nav-menu-item {
-            font-size: 3vh;
-          }
-      }
-}
-
-@media (max-width: 1023px){
+@media (max-width: 768px){
     .cont-resumen{
+        margin: 0 10px;
         margin-top: 70px;
 
         .resumen{
@@ -103,7 +94,10 @@
 
         .txt-img{
             font-size: 4vh;
-            margin: 30px 20px;
+        }
+
+        .ft-parada{
+            margin: 0 0;
         }
     }
 
@@ -119,5 +113,11 @@
 
     .iniciarse{
         font-size: 4vh;
+    }
+
+    .video-MK{
+        margin: 0 20px;
+        width: 80%;
+        height: 70%;
     }
 }

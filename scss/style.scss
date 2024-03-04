@@ -3,7 +3,33 @@
 *{
     margin: 0;
     box-sizing: border-box;
+}
+
+@media (min-width: 1025px){
+  .contenido{
+    margin: auto;
+    width: 80%;
   }
+}
+
+body{
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    background-color: gainsboro;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;    
+}
+
+
 
 @import "navbar";
 @import "index";
@@ -12,11 +38,3 @@
 @import "section_coach";
 @import "section_MK";
 
-
-.footer{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    background-color: gainsboro;
-    margin-top: 20px;
-}

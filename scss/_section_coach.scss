@@ -1,28 +1,16 @@
-.cont-nav-bar-coach{
-    height: 15vh;
-    background-color: rgb(183, 242, 205);
-}
+.cont-resumen-coach{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 
-.nav-menu-link-coach {
-    border-radius: 15px;
-    padding: 10px 20px;
-}
-
-.nav-menu-link-coach:hover {
-    background-color:rgb(139, 168, 160) ;
-    box-shadow: 0 0 0 4px (139, 168, 160);
-    transition: 0,5s;
-}
-
-.resumen-coach{
-    background-color: rgb(225, 236, 209);
-    padding: 20px 20px;
-    font-family: 'Cabin', sans-serif;
-    font-size: 20px;
-    box-shadow: 10px 10px 20px rgb(68, 68, 68);
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    .resumen-coach{
+        background-color: rgb(225, 236, 209);
+        padding: 10px 20px;
+        font-family: 'Cabin', sans-serif;
+        font-size: 20px;
+        box-shadow: 10px 10px 20px rgb(68, 68, 68);
+        width: 80%;
+    }
 }
 
 .cont-txt-img-coach{
@@ -40,7 +28,7 @@
     margin-left: 50px;
     box-shadow: 10px 10px 20px rgb(68, 68, 68);
     font-family: 'Cabin', sans-serif;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .img-coach{
@@ -49,24 +37,9 @@
     margin-top: 20px;
 }
 
+@media (max-width: 768px){
 
-@media (max-width: 992px){
-    .list-nav-coach{
-        text-align: center;
-        margin-top: 7vh;
-        background-color: #c6dedf;
-        border-radius: 10px;
-    }
-}
-
-@media (max-width: 1023px){
-
-    .cont-nav-bar-coach{
-        min-height: 70px;
-        max-height: 70px;
-    }
-
-    .resumen-coach{
+    .cont-resumen-coach{
         margin-top: 100px;
     }
 
@@ -78,25 +51,21 @@
         display: block;
     }
 
-    .resumen-coach, .txt-coach{
-        font-size: 3vh;
+    .cont-resumen-coach ,.txt-coach{
+        min-width: 40%;
     }
 
-    .cont-nav-bar-coach{
-        position: fixed;
-        width: 100%;
-        top: 0;
+    .resumen, .txt{
+        font-size: 15px;
     }
 
     .cont-img-coach{
-        display: flex;
-        justify-content: center;
         margin: 40px 0px;
     }
 
     .img-coach{
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
     }
 
     .txt-coach{
